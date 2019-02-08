@@ -10,7 +10,7 @@ import UIKit
 
 // タップ領域を変更できるボタン
 class TapExpansionButton: UIButton {
-    internal var insets: UIEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0)
+    internal var insets: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         var rect: CGRect = self.bounds
         rect.origin.x -= self.insets.left
